@@ -1,0 +1,179 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+
+nav {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a.active {
+    background-color: white;
+    color: darkgreen;
+    padding: 5px;
+}
+
+
+nav a:hover {
+    color: yellow;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+
+h1, h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: green;
+}
+
+
+article {
+    background-color: #eaf5ea;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #b5d6b5;
+    border-radius: 5px;
+}
+
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.event-list article {
+    flex: 1 1 250px;
+}
+
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a[href^="https"] {
+    text-decoration: underline;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+
+fieldset {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+
+button {
+    background-color: rgb(104, 195, 104);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+
+a:focus, input:focus, select:focus, button:focus {
+    outline: 2px solid orange;
+}
+
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .event-list {
+        flex-direction: column;
+    }
+}
