@@ -42,6 +42,7 @@ form.addEventListener("submit", function(event) {
     registrations.push(registration);
 
     localStorage.setItem("cricketRegistrations", JSON.stringify(registrations));
+    console.log(localStorage.getItem("cricketRegistrations"));
 
     message.textContent = "Registration saved successfully!";
     form.reset();
