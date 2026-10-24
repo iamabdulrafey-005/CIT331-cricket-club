@@ -37,12 +37,50 @@
         <input type="tel" id="phone"
                pattern="[0-9]{11}" required>
 
-        
+        <label for="event">Choose an Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Select an event</option>
+                    <option value="Indoor Cricket Tournament">Indoor Cricket Tournament - 22 November 2026</option>
+                    <option value="Friendly Cricket Match">Friendly Cricket Match - 25 November 2026</option>
+                    <option value="Batting and Bowling Practice">Batting and Bowling Practice - 28 November 2026</option>
+                    <option value="Cricket Team Trials">Cricket Team Trials - 2 December 2026</option>
+                </select>
+
+            <fieldset>
+                    <legend>How did you hear about us?</legend>
+
+                    <label for="friend">
+                        <input type="radio" id="friend" name="referral"
+                               value="Friend" required>
+                        Friend
+                    </label>
+
+                    <label for="notice">
+                        <input type="radio" id="notice" name="referral"
+                               value="University notice">
+                        University notice
+                    </label>
+
+                    <label for="social">
+                        <input type="radio" id="social" name="referral"
+                               value="Social media">
+                        Social media
+                    </label>
+                </fieldset>
 
         <button type="submit">Register</button>
-        <button type="clear"> delete all</button>
+        <button type="clear"> clear all Registration</button>
     </form>
+   
+    
 </section>
+
+section>
+            <h2>Saved Registrations</h2>
+            <ul id="registrations">
+                <li>No registrations yet.</li>
+            </ul>
+        </section>
 
     </main>
 
